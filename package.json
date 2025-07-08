@@ -9,7 +9,7 @@
     "dev": "ts-node src/index.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -39,5 +39,9 @@
     "hooks": {
       "pre-commit": "npm run lint && npm run format"
     }
+  },
+  "engines": {
+    "node": ">=18.x.x",
+    "npm": ">=10.5.x"
   }
 }
